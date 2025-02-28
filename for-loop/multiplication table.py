@@ -1,3 +1,5 @@
+# Write a program to print the multiplication table of a given number.
+
 numbers_you_want_to_input=int(input("type the number"))
 
 for i in range(1,11):

@@ -1,6 +1,4 @@
-# letters=input("input any letters\n")
-# for i in letters:
-
+# Take a string as input and print it in reverse using a for loop.
 
 letter=input("type your letters\n")
 
