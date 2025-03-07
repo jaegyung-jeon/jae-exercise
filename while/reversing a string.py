@@ -1,15 +1,15 @@
 #function reverse_string(s) that reverses a given string using a while loop instead of python's built-in methods.
 
-def reverse_string(x):
-    # letter=input("input: ")
+def reverse_string():
+    letter=input("input: ")
 
-    num=len(x)-1
+    num=len(letter)-1
     while num>=0:
-        print(x[num],end="")
+        print(letter[num],end="")
         num-=1
     print()
 
-reverse_string(x)
+reverse_string()
 
 
 
