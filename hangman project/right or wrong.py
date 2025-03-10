@@ -4,7 +4,7 @@ name=random.choice(word_list)
 print(name)
 
 while True:
-    guess=input("guess the letter ")
+    guess=input("guess the letter ").lower()
     if guess in name:
         print("right")
     else:
