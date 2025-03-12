@@ -2,11 +2,14 @@
 
 def reverse_string():
     letter=input("input: ")
+    counter=0
+    lastindex=len(letter)-1
+    while counter<=lastindex :
+        print(letter[counter],end="")
+        counter+=1
 
-    num=len(letter)-1
-    while num>=0:
-        print(letter[num],end="")
-        num-=1
+
+        
     print()
 
 reverse_string()
