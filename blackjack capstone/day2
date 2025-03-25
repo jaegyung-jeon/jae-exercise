@@ -1,0 +1,47 @@
+import random
+cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
+
+question_1=input("do you want to play blackjack? type 'y' or 'n': ")
+
+user_card_list=[]
+user_score=0
+
+computer_card_list=[]
+computer_score=0
+if question_1=="y":
+    computer_card_list.append(random.choice(cards))
+    computer_score+=computer_card_list[0]
+    for i in  range(3):
+        user_card_list.append(random.choice(cards))
+        user_score+=user_card_list[i]
+
+    print(f"your cards: {user_card_list}, current score: {user_score}")
+    print(f"computer's first card: {computer_card_list}")
+
+
+
+    question_2=input("type y to get another card, type n to pass: ")
+    if question_2=="y":
+        user_card_list.append(random.choice(cards))
+        user_score+=user_card_list[3]
+        print(f"your cards: {user_card_list}, current score: {user_score}")
+        print(f"computer's first card: {computer_card_list}")
+        print(f"your final hand: {user_card_list}, final score: {user_score}")
+        print(f"computer's final card: {computer_card_list}")
+        print(f"computer's final score: {computer_score}")
+
+        if user_score>21:
+            print("you lose bitch ass muther fucker")
+        elif user_score==computer_score:
+            print("draw")
+        else:
+            print("you win")
+
+
+    else:
+        if user_score>computer_score:
+            print("you win")
+        elif user_score==computer_score:
+            print("draw")
+        else:
+            print("you lose")
